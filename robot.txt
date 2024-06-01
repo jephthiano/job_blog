@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jobsblog333.000webhostapp.com/sitemap.xml

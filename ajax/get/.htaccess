@@ -1,0 +1,15 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+#for load comment
+RewriteRule ^lc/([\d]*)/([\d]*)/([\d]*)/?$ load_comment.xhr.php?id=$1&sta=$2&dis=$3
+
+#for check more comment
+RewriteRule ^cmc/([\d]*)/([\d]*)/([\d]*)/?$ check_more_comment.xhr.php?id=$1&sta=$2&dis=$3
+
+#for get comment section
+RewriteRule ^gcs/([\d]*)/?$ get_comment_section.xhr.php?id=$1
+
+</IfModule>

@@ -1,0 +1,15 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for insert subscriber
+RewriteRule ^insub/?$ insert_subscriber.xhr.php
+
+# for insert message
+RewriteRule ^im/?$ insert_message.xhr.php
+
+# for insert comment
+RewriteRule ^ic/?$ insert_comment.xhr.php
+
+</IfModule>
